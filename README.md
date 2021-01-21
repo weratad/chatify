@@ -32,7 +32,7 @@ A Laravel package that allows you to add a complete user messaging system into y
    with simple and wonderful UI design.
 
 # Demo
-- Demo app - [Click Here](https://github.com/munafio/chatify-demo).
+- Demo app - [Click Here](https://github.com/weratad/chatify).
 - Video on YouTube - [Click Here](https://youtu.be/gjo74FUJJPI)
 
 # Installation
@@ -49,7 +49,7 @@ Follow the steps below :
 **Quick Note:** If you are installing this package in a new project, make sure to install the default user authentication system provided with [Laravel](https://laravel.com/docs).
 
 ```sh
-$ composer require munafio/chatify
+$ composer require weratad/chatify
 ```
 
 #### 2. Pusher Api Settings
