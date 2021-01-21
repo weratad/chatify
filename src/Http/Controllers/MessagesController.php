@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Response;
 use Chatify\Http\Models\Message;
 use Chatify\Http\Models\Favorite;
 use Chatify\Facades\ChatifyMessenger as Chatify;
-use App\User;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
@@ -340,7 +340,7 @@ class MessagesController extends Controller
     {
         $getRecords = null;
         $input = trim(filter_var($request['input'], FILTER_SANITIZE_STRING));
-        $records = User::where('name', 'LIKE', "%{$input}%");
+        $records = User::where('username', 'LIKE', "%{$input}%");
         foreach ($records->get() as $record) {
             $getRecords .= view('Chatify::layouts.listItem', [
                 'get' => 'search_item',

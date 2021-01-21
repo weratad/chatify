@@ -5,9 +5,9 @@
 <meta name="url" content="{{ url('').'/'.config('chatify.path') }}" data-user="{{ Auth::user()->id }}">
 
 {{-- scripts --}}
+<script src="{!! asset('js/jquery-3.1.1.min.js') !!}"></script>
 <script src="{{ asset('js/chatify/font.awesome.min.js') }}"></script>
 <script src="{{ asset('js/chatify/autosize.js') }}"></script>
-<script src="{{ asset('js/app.js') }}"></script>
 <script src='https://unpkg.com/nprogress@0.2.0/nprogress.js'></script>
 
 {{-- styles --}}
